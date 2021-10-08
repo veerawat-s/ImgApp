@@ -1,4 +1,4 @@
-package com.sample.apod;
+package com.sample.imgapp;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
