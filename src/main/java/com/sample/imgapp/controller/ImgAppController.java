@@ -32,6 +32,7 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class ImgAppController {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(ImgAppController.class);

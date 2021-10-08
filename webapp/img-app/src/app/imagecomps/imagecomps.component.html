@@ -1,0 +1,24 @@
+<h2>Image Storage Application</h2>
+<ul class="images">
+  <li *ngFor="let img of images"
+    [class.selected]="img===selectedImg"
+      (click)="onSelect(img)"
+    >
+    <span class="badge">{{img.id}} : </span> {{img.title}}
+
+  </li>
+</ul>
+
+<div *ngIf="selectedImg">
+
+  <h2>{{selectedImg.title | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedImg.id}}</div>
+  <div>
+    <label for="img-name">Image description: </label>
+    <input id="img-name" [(ngModel)]="selectedImg.description" placeholder="name">
+    <br>
+    <button type="button" class="btn btn-default" (click)="deleteImage();">Delete Image</button>
+  </div>
+  <div><img src="http://localhost:8080/{{selectedImg.imageUrl}}"/></div>
+
+</div>

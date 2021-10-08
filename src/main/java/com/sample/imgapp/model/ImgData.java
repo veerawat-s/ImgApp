@@ -23,9 +23,6 @@ public class ImgData {
 	@Column(nullable = false, length = 128)
 	private Date date;
 
-//	private Integer thumbSize;
-//	private String thumbUrl;
-
 	@Column(nullable = true, length = 512)
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	private String description;
@@ -50,6 +47,9 @@ public class ImgData {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+
+//	private Integer thumbSize;
+//	private String thumbUrl;
 
 //	public Integer getThumbSize() {
 //		return thumbSize;
@@ -90,5 +90,7 @@ public class ImgData {
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
+	public long getId() { return id; }
 
 }
