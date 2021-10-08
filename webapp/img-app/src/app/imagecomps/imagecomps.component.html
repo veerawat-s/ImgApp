@@ -15,8 +15,11 @@
   <div><span>id: </span>{{selectedImg.id}}</div>
   <div>
     <label for="img-name">Image description: </label>
+  </div>
+  <div>
     <input id="img-name" [(ngModel)]="selectedImg.description" placeholder="name">
-    <br>
+  </div>
+  <div>
     <button type="button" class="btn btn-default" (click)="deleteImage();">Delete Image</button>
   </div>
   <div><img src="http://localhost:8080/{{selectedImg.imageUrl}}"/></div>
