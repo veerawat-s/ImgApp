@@ -35,7 +35,7 @@ import javax.servlet.http.HttpServletResponse;
 public class ImgAppController {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(ImgAppController.class);
-	public static final String IMG_PATH = "G:/Work/ImgAppData/images";
+	public static final String IMG_PATH = "/images";
 	public static final SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
 	private ObjectMapper mapper = new ObjectMapper();
